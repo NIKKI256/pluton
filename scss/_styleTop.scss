@@ -1,0 +1,120 @@
+*{margin: 0;padding: 0;
+    text-decoration: none;font-family: Arial, Helvetica, sans-serif;}
+
+header{
+    width: 100%;
+    height: 668px;
+    background-image:url(img/back_top.png);
+}
+
+.header_content{
+    padding-top: 2%;
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_header{
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 24%;
+}
+
+.logo_header p{
+    margin-top: 1%;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.logo_header img{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.logo_right{
+    margin-left: 2%;
+}
+
+.input_header{
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.input_header input[type="text"]{
+    height: 22px;
+    width: 100%;
+    border-radius: 15px;
+    color: black;
+    outline:none;
+    padding-left: 5px;
+}
+
+.lenin{
+    display: flex;
+    width: 30%;
+}
+
+.lenin span{
+    margin-top: 2%;
+    margin-left: 3%;
+    color: #dfe0db;
+    font-size: 11px;
+}
+
+.lenin img{
+    max-width: 97px;
+    max-height: 97px;
+}
+
+.number{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    color: orange;
+    font-weight: 600;
+}
+
+@media only screen 
+and (max-width:1373px){
+    .header_content{
+        width:100%;
+    }
+    .logo_header{
+        margin-left: 0.1%;
+    }
+    .number{
+        margin-right: 0.4%;
+    }
+}
+
+@media only screen 
+and (max-width:902px){
+    .header_content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+
+    .logo_header{width: 100%;}
+    .input_header{width: 90%;}
+    .lenin{width: 100%;align-items: center;}
+    .number{width: 90%;align-items: center;}
+}
+
+@media only screen 
+and (max-width:534px){
+    .header_content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo_header{width: 100%;}
+    .input_header{width:100%;margin-top: 3%;}
+    .lenin{width: 100%;align-items: center;margin-top: 3%;}
+    .number{width: 100%;align-items: center;margin-top: 3%;}
+}
